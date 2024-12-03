@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contact-me/"}
+{"dg-publish":true,"permalink":"/Contact Me/"}
 ---
 
 I am using GitHub Discussions to wrangle feedback for my site. My GitHub is also a good place to see what else I am doing and find more direct contact information if you need it.
