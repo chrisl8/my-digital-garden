@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/About This Site/","tags":["Site","gardenEntry"]}
+{"dg-publish":true,"permalink":"/about-this-site/","tags":["Site","gardenEntry"]}
 ---
 
 Published: December 1, 2022 | Updated: February 25, 2023
 # git init Universe
 “**If you wish to make an apple pie from scratch, you must first invent the universe**” – Carl Sagan
 
-![](/img/user/attachments/2016-08-21-16.36.41.jpg)
+![2016-08-21-16.36.41.jpg](/img/user/attachments/2016-08-21-16.36.41.jpg)
 
 These are the voyages of the Voidship Ephemeral. An ephemeral log is a contradiction, but I like contradictions.
 
@@ -56,8 +56,7 @@ Computers have been my hobby and passion since childhood. My hobby is to experim
 [Of εκπυρωσις and Froods](Of%20εκπυρωσις%20and%20Froods.md)
 
 Now it's time to get off of planet Earth!
-![](/img/user/attachments/Pasted image 20230224162710.png)
-
+![Pasted image 20230224162710.png](/img/user/attachments/Pasted%20image%2020230224162710.png)
 # Privacy
 I really wish I could tell how often this content is used, just so I know if it is helpful and if I should keep it out here, but the service I use doesn't provide any method other than Google Analytics and at this point I'm not willing to subject anyone to Google on purpose.
 So this site collects no information and hardly knows that you were even here, and certainly I cannot tell. Your ad blocker and privacy plugins should show this site as having zero "bad thingies".
@@ -70,6 +69,3 @@ I'm also on Mastodon
 <a rel="me" href="https://mastodon.social/@EkpyroticFrood">@EkpyroticFrood@mastodon.social</a>
 
 #Site 
-# Test
-[[attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg|Open: Pasted image 20241203133452.png]]
-![attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg](/img/user/attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg)
