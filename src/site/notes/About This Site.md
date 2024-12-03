@@ -12,9 +12,9 @@ These are the voyages of the Voidship Ephemeral. An ephemeral log is a contradic
 
 This is a log of things both real and imaginary.
 
-![](/img/user/attachments/Pasted image 20230224162106.png)
+![PastedImage20230224162106.png](/img/user/attachments/PastedImage20230224162106.png)
 
-It will include many updates from my adventures in cyberspace (aka. videogames) as well as random tidbits from my hobbies, random ravings (writing), and photographs of the world I imagine myself to live in.
+It may include updates from my adventures in cyberspace (aka. videogames) as well as random tidbits from my hobbies, random ravings (writing), and photographs of the world I imagine myself to live in.
 
 # What is this actually?
 
@@ -51,7 +51,6 @@ Computers have been my hobby and passion since childhood. My hobby is to experim
 
 [ChrisL8 on Github](https://github.com/chrisl8)
 [Ekpyrotic Frood on Mastodon](https://mastodon.social/@EkpyroticFrood)
-
 ## What is an "Ekpyrotic Frood"?
 
 [Of εκπυρωσις and Froods](Of%20εκπυρωσις%20and%20Froods.md)
@@ -71,3 +70,6 @@ I'm also on Mastodon
 <a rel="me" href="https://mastodon.social/@EkpyroticFrood">@EkpyroticFrood@mastodon.social</a>
 
 #Site 
+# Test
+[[attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg|Open: Pasted image 20241203133452.png]]
+![attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg](/img/user/attachments/5af8f6fadf36545d7add96a38c5eb804_MD5.jpeg)
