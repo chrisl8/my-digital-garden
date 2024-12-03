@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/of-ekpyrosis-and-froods/","title":"Of Ekpyrotic and Froods"}
+{"dg-publish":true,"permalink":"/of-ekpyrosis-and-froods/","title":"Of Ekpyrotic and Froods","tags":["Site"]}
 ---
 
 *Posted: December 5, 2014*
@@ -26,5 +26,3 @@ Ultimately "ekpyrotic" isn't anything deep and mysterious, just a fun word with 
 "Frood" means "really amazingly together guy", from Douglas Adams' Hitchhiker's Guide to the Galaxy:
 
 "Hence a phrase that has passed into hitchhiking slang, as in “Hey, you sass that hoopy Ford Prefect? There’s a frood who really knows where his towel is.” (Sass: know, be aware of, meet, have sex with; hoopy: really together guy; frood: really amazingly together guy.)" Adams, Douglas (2010-09-29). The Ultimate Hitchhiker's Guide to the Galaxy (p. 21). Random House, Inc.. Kindle Edition.
-
-#Site 

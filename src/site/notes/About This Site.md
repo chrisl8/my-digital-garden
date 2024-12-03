@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/about-this-site/","tags":["Site","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/about-this-site/","tags":["Site","gardenEntry"]}
 ---
 
-Published: December 1, 2022 | Updated: February 25, 2023
+Published: December 1, 2022 | Updated: December 3, 2024
 # git init Universe
 “**If you wish to make an apple pie from scratch, you must first invent the universe**” – Carl Sagan
 
@@ -18,7 +18,7 @@ It may include updates from my adventures in cyberspace (aka. videogames) as wel
 
 # What is this actually?
 
-1. This is a selection of Markdown files from my [Obsidian](https://obsidian.md/) notebook that I am using [Obsidian Publish](https://obsidian.md/publish) to publish to the web.
+1. This is a selection of Markdown files from my [Obsidian](https://obsidian.md/) notebook that I am using the [Obsidian Digital Garden Plugin](https://github.com/oleeskild/obsidian-digital-garden) to publish to the web.
 2. This is a consolidation of all of my old blogs into a simpler format that is easier for me to maintain.
 
 Really this is just random junk that either:
@@ -53,19 +53,14 @@ Computers have been my hobby and passion since childhood. My hobby is to experim
 [Ekpyrotic Frood on Mastodon](https://mastodon.social/@EkpyroticFrood)
 ## What is an "Ekpyrotic Frood"?
 
-[Of εκπυρωσις and Froods](Of%20εκπυρωσις%20and%20Froods.md)
+[[Of εκπυρωσις and Froods\|Of εκπυρωσις and Froods]]
 
 Now it's time to get off of planet Earth!
 ![Pasted image 20230224162710.png](/img/user/attachments/Pasted%20image%2020230224162710.png)
 # Privacy
-I really wish I could tell how often this content is used, just so I know if it is helpful and if I should keep it out here, but the service I use doesn't provide any method other than Google Analytics and at this point I'm not willing to subject anyone to Google on purpose.
-So this site collects no information and hardly knows that you were even here, and certainly I cannot tell. Your ad blocker and privacy plugins should show this site as having zero "bad thingies".
-I have requested that Obsidian provide alternative analytic mechanisms and I believe they are working on it.
-
+This site collects no information and hardly knows that you were even here, and certainly I cannot tell. Your ad blocker and privacy plugins should show this site as having zero "bad thingies".
 # Contact Me
 [[Contact Me\|Contact Me]]
 
 I'm also on Mastodon
 <a rel="me" href="https://mastodon.social/@EkpyroticFrood">@EkpyroticFrood@mastodon.social</a>
-
-#Site 
