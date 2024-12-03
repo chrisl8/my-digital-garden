@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/About This Site/","tags":["Site","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/About This Site/","tags":["Site","gardenEntry"]}
 ---
 
 Published: December 1, 2022 | Updated: February 25, 2023
@@ -65,7 +65,7 @@ So this site collects no information and hardly knows that you were even here, a
 I have requested that Obsidian provide alternative analytic mechanisms and I believe they are working on it.
 
 # Contact Me
-[Contact Me](Contact%20Me.md)
+[[Contact Me\|Contact Me]]
 
 I'm also on Mastodon
 <a rel="me" href="https://mastodon.social/@EkpyroticFrood">@EkpyroticFrood@mastodon.social</a>
