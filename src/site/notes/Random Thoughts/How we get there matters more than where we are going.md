@@ -6,6 +6,6 @@
 
 I really enjoy doing CAD work in [OpenSCAD](https://openscad.org/), even though it probably isn’t the most efficient method. It works well with my brain’s desire to create by iterating repeatedly on minor changes to a pattern that I can clearly see written out in text.
 
-![](/img/user/attachments/Pasted image 20230224162937.png)
+![attachments/Pasted image 20230224162937.png](/img/user/attachments/Pasted%20image%2020230224162937.png)
 
 #DeepThought 
