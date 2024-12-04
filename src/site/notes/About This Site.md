@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/about-this-site/","tags":["Site","gardenEntry"]}
+{"dg-publish":true,"permalink":"/about-this-site/","tags":["Site","gardenEntry","gardenEntry"]}
 ---
 
 Published: December 1, 2022 | Updated: December 3, 2024
