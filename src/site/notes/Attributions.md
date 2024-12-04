@@ -1,5 +1,5 @@
 ---
-{"tags":["Site"],"dg-publish":true,"permalink":"/attributions/","dgPassFrontmatter":true}
+{"tags":["Site"],"dg-publish":true,"order":2,"permalink":"/attributions/","dgPassFrontmatter":true}
 ---
 
 # Logo and Site Icon
