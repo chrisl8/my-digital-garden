@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/of-ekpyrosis-and-froods/","title":"Of Ekpyrotic and Froods","tags":["Site"]}
+{"title":"Of Ekpyrotic and Froods","created":"2014-12-05","authors":["hoopy"],"dg-publish":true,"tags":["Site"],"permalink":"/of-ekpyrosis-and-froods/","dgPassFrontmatter":true}
 ---
 
 *Posted: December 5, 2014*

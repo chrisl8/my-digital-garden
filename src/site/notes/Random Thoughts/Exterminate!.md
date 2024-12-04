@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/random-thoughts/exterminate/"}
+{"dg-publish":true,"permalink":"/random-thoughts/exterminate/","dgPassFrontmatter":true}
 ---
 
 *Posted: December 13, 2022*

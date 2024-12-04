@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/random-thoughts/how-we-get-there-matters-more-than-where-we-are-going/"}
+{"dg-publish":true,"permalink":"/random-thoughts/how-we-get-there-matters-more-than-where-we-are-going/","dgPassFrontmatter":true}
 ---
 
 *Written: December 11, 2022*

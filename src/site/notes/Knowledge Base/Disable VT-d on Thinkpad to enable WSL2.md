@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge-base/disable-vt-d-on-thinkpad-to-enable-wsl-2/"}
+{"dg-publish":true,"permalink":"/knowledge-base/disable-vt-d-on-thinkpad-to-enable-wsl-2/","dgPassFrontmatter":true}
 ---
 
 *Posted: February 14, 2023*

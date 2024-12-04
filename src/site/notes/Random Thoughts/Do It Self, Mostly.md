@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/random-thoughts/do-it-self-mostly/"}
+{"dg-publish":true,"permalink":"/random-thoughts/do-it-self-mostly/","dgPassFrontmatter":true}
 ---
 
 *Sunday, September 8, 2024 @ 10:50 AM - Colorado*

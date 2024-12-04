@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/random-thoughts/imaginary-people/"}
+{"dg-publish":true,"permalink":"/random-thoughts/imaginary-people/","dgPassFrontmatter":true}
 ---
 
 *Sunday, September 8, 2024 @ 10:30AM - Colorado*

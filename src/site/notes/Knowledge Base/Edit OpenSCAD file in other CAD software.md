@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge-base/edit-open-scad-file-in-other-cad-software/"}
+{"dg-publish":true,"permalink":"/knowledge-base/edit-open-scad-file-in-other-cad-software/","dgPassFrontmatter":true}
 ---
 
 *Posted: December 14, 2022*
