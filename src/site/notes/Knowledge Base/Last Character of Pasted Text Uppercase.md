@@ -29,13 +29,14 @@ Paste this right into the terminal.
 
 I swear it worked once, but now it doesn't, so no progress here either.
 
-# Progress
 ## `bindkey -e`
 https://stackoverflow.com/a/78811755/4982408
 This changes the paste from sometimes ending uppercase to sometimes ending in a `~` which is both easier to see and less annoying to fix. It also proves the problem.
 
 Adding that to the end of `.zshrc` accomplishes the task permanently.
 
-Now how to fix the problem rather than just "unmasking" it?
+**However**, this also defeats using `vim` on the command line almost entirely, so it isn't a workable solution.
+# Progress
 
+None really, other than if I press `u` it will flip the case of the last pasted character, so I just get used to doing that.
 
