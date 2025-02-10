@@ -1,2 +1,9 @@
 # Digital Obsidian Garden
-This is my blog data used with [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden) to publish my [Obsidian](https://obsidian.md/) notes to a website at https://log.voidshipephemeral.space/
+This is the template to be used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden). 
+See the README in the plugin repo for information on how to set it up.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
+
+---
+## Docs
+Docs are available at [dg-docs.ole.dev](https://dg-docs.ole.dev/)
