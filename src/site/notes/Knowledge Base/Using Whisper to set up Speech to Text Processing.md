@@ -6,7 +6,7 @@
 # Whisper Speech to Text
 https://github.com/openai/whisper
 
-You can engage your GPU to do speech to text on your home computer using OpenAI's Whisper.
+You can engage your GPU to do speech to text on your home computer using OpenAI's Whisper!
 
 [[attachments/6a51cd74d96a2ac6ee03b134a60b1fad_MD5.jpeg|Open: Pasted image 20250221131831.png]]
 ![attachments/6a51cd74d96a2ac6ee03b134a60b1fad_MD5.jpeg](/img/user/attachments/6a51cd74d96a2ac6ee03b134a60b1fad_MD5.jpeg)
@@ -55,6 +55,26 @@ To see what other options you can pass to it run:
 ```
 For instance you can skip all of the alternate output formats by specifying `--output_format txt`
 # Other Options than Whisper?
-There are other things out there like "faster-whisper", but this did the job for me just fine, so I'm sticking with it.
 
-For me, speed is not important, I will just start it and walk away while it does the work.
+My personal goal here is to transcribe notes that I record for myself.
+ - Speed doesn't matter much as I will just start this and walk away from the computer for a while.
+ - Accuracy needs to be "good enough" but not perfect as I will retain the audio files these are all things that I said, so I should recognize errors if they are large enough to change meaning.
+
+There are other things out there like "faster-whisper" and "whisperx" and also Large v1, v2 and v3 models of Whipser.
+
+My quick research told me that `medium.en` is probably as good or better at English than any of the Large or newer models.
+
+I will wait until I run into issues with accuracy before I do much testing.
+
+*My scant testing showed that some things are 100% accurate always and then some words are just guessed wrong by every model, just different wrong.*
+
+If I do decide to test other options, I will likely diff the outputs to see how well they match and where they differ.
+
+# TL;DR Quickstart for Me
+```
+cd /home/chrisl8/Dev/Whisper
+cp /mnt/d/Nextcloud/Voice\ Recordings/250309_1057_01.mp3 .
+./bin/whisper 250309_1057_01.mp3 --language English --model medium.en --output_format txt
+mv 250309_1057_01.txt /mnt/d/Nextcloud/Voice\ Recordings
+rm 250309_1057_01.mp3
+```
