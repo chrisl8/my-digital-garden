@@ -3,7 +3,22 @@
 ---
 
 
+# Background
+I started and took most of these notes while watching the Blender Bros "Hard Surface Accelerator" course from https://www.blenderbros.com/accelerator
+
+There is a lot of polarized feelings about this course and the creator online, but I found it to be the easiest and fastest way for me to go from zero Blender knowledge to being able to enjoy making things in the style that I am personally interested in (sci-fi interior scenes and objects).
+
+I came from making things in CAD, so "hard surface" modeling using mostly Boolean (yeah, you capitalize it, weird I know) methods is exactly what I wanted. I'm not afraid of getting started and then learning new ways to do things, but they are called the "Boolean Brothers" for a reason, so just be aware of that going in and your expectations should be right.
+
+I personally recommend buying their course. Don't get pressured into buying more, just buy the one, ignore the "limited time discount" on further courses, and work your way through the one course start to finish. If you do that your time and money won't be wasted, as you'll definitely be on your way to using Blender productively.
+
+---
+Over time I've added addition notes to this from other sources as I researched and learned new things.
+
+---
+I tend to have a bad memory about a lot of things, so I open these notes basically every time I open Blender so that I can remind myself how to do basic things again or re-learn how to get un-stuck from some dumb situation I get myself into on the regular.
 # Initial Setup
+The Hard Surface Accelerator provides a very detailed walk-through on how to set up Blender to work the way it will in their videos, so I took notes to help me replicate that setup again in the future.
 ## Startup
 Set Spacebar to Search, it is much more useful:
 [Open: Pasted image 20241117163818.png](attachments/b9b717b696f3214b43267a96906d9eb8_MD5.jpeg)
@@ -207,28 +222,7 @@ It is on by default and you want it on typically, but if it isn't working, this 
 `Ctrl+z` - Undo
 `Ctrl+Shift+z` - Redo
 
-## Bool Tool
- - The bool tool ALSO automatically turns the cutter object to wire display!
-Select cutter first, then `Shift + Click` target object.
-`Ctrl + Numpad(-)` - Difference Boolean
-`Ctrl + Numpad(+)` - Union Boolean
-`Ctrl + Numpad(*)` - Intersect Boolean
-`Ctrl + Numpad(/)` - Slice Boolean
-
-You can also do this with a menu
-`Shift + Ctrl + b` brings up:
-[Open: Pasted image 20241101195251.png](attachments/b9145d7e52c930b2d270867d072676dd_MD5.jpeg)
-![](/img/user/attachments/b9145d7e52c930b2d270867d072676dd_MD5.jpeg)
- - Auto - Auto applies, deleting the cutters, basically destructive
- - Brush - Does not apply it, as you are used to, leaving the cutters and can turn them into wireframe display if enabled
-### Bool Tool QOL Benefits
- - The Bool Tool automatically makes a "boolean_cutters" collection and puts the cutters in it.
- - The Bool Tool automatically parents the cutters to the target object so that they move with it.
- - The Bool Tool automatically sets the cutters to be displayed as "Bounding Boxes" which are just boxlike frames
-You can change all of these and I actually like setting display to "Wire" although it can affect performance:
-[Open: Pasted image 20241101201428.png](attachments/fa49c9551ad508f1411eeb91691377d4_MD5.jpeg)
-![](/img/user/attachments/fa49c9551ad508f1411eeb91691377d4_MD5.jpeg)
-
+See the Booleans section for notes on Booleans
 ## Mode
 Object Mode and Edit Mode
 [Open: Pasted image 20241026150924.png](attachments/c056de9ab07945eb818c17db45a1e666_MD5.jpeg)
@@ -247,7 +241,20 @@ The assumption though is that you have the mouse in your left hand at all times 
 # Modifiers
 If you Apply any modifier, it technically moves to the TOP of the stack and then applies.
 So you really just need to Apply in top-down order, which makes sense anyway.
+# Application of Modifiers
+Be aware that until you **apply** a modifier, the geometry shown is only a *preview*. You can demonstrate this by switching from Object to Edit mode and you will not see the modified object **or** you can turn on "preview in edit" mode [Open: Pasted image 20241101192435.png](attachments/9e769f185c89fc27b0b1e31206dbaea4_MD5.jpeg)
+![](/img/user/attachments/9e769f185c89fc27b0b1e31206dbaea4_MD5.jpeg) to see what will happen when you apply it.
 
+Also note that you can only apply modifiers in Object mode.
+
+[Open: Pasted image 20241101192538.png](attachments/1bb9d319d1bab17544fe80d0308a73e3_MD5.jpeg)
+![](/img/user/attachments/1bb9d319d1bab17544fe80d0308a73e3_MD5.jpeg)
+# Destructive Workflows
+Be aware that things done in Edit mode are "destructive" because the change can't be "removed" or "changed", while things done in Object mode via Modifiers are considered "non-destructive" because you can undo/change them easily, at least before you apply them.
+# Empty
+You can add "Empty" objects for use with things like mirror across. Save as with Meshes, `Shift+a` and then pick Empty and whatever you want.
+Plan Axis is often used for these things.
+It can be a lot easier than making junk meshes for tasks like this.
 # Scaling
 ## Apply
 `Ctrl+a` - Apply Menu, Scale
@@ -268,13 +275,6 @@ You can adjust the Angle.
 **Don't apply this,** because if you do it will later get applied before cuts, and that will cause a mess.
 [Open: Pasted image 20241130175624.png](attachments/e3d7630b1bd199a7500807ce866a1a44_MD5.jpeg)
 ![](/img/user/attachments/e3d7630b1bd199a7500807ce866a1a44_MD5.jpeg)
-# Topology
-## Face Topology Types
-Based on edge count.
- - Triangles - Cannot be bent!
- - Quads
- - N-Gons - Any face with more than 4 edges.
-
 # Edge Tool Commands
 `h` - *Hide Geometry* as it ever was
 `Alt+h` - *UN-Hide Geometry*
@@ -314,94 +314,29 @@ Between Loop Cuts and Extrude you can do a **lot** of stuff!
 An example of the chaos one can achieve.
 
 **Limited Dissolve** To "weld" faces (back) together, press `x` and pick "Limited Dissolve" after selecting the two faces to join back together.
+# Booleans
+## Bool Tool
+ - The bool tool ALSO automatically turns the cutter object to wire display!
+Select cutter first, then `Shift + Click` target object.
+`Ctrl + Numpad(-)` - Difference Boolean
+`Ctrl + Numpad(+)` - Union Boolean
+`Ctrl + Numpad(*)` - Intersect Boolean
+`Ctrl + Numpad(/)` - Slice Boolean
 
-# Mirroring
-**First, remember that you have to pick a Mirror Object, otherwise it does nothing!**
+You can also do this with a menu
+`Shift + Ctrl + b` brings up:
+[Open: Pasted image 20241101195251.png](attachments/b9145d7e52c930b2d270867d072676dd_MD5.jpeg)
+![](/img/user/attachments/b9145d7e52c930b2d270867d072676dd_MD5.jpeg)
+ - Auto - Auto applies, deleting the cutters, basically destructive
+ - Brush - Does not apply it, as you are used to, leaving the cutters and can turn them into wireframe display if enabled
+### Bool Tool QOL Benefits
+ - The Bool Tool automatically makes a "boolean_cutters" collection and puts the cutters in it.
+ - The Bool Tool automatically parents the cutters to the target object so that they move with it.
+ - The Bool Tool automatically sets the cutters to be displayed as "Bounding Boxes" which are just boxlike frames
+You can change all of these and I actually like setting display to "Wire" although it can affect performance:
+[Open: Pasted image 20241101201428.png](attachments/fa49c9551ad508f1411eeb91691377d4_MD5.jpeg)
+![](/img/user/attachments/fa49c9551ad508f1411eeb91691377d4_MD5.jpeg)
 
-Note that you mirror "along" the axis chosen. In other words, point an arrow FROM the target object ALONG the axis chosen TOWARD the Mirror Object.
-
-Also note that a Mirror is essentially "overwriting" the other half, so if you modified both sides of an object and then try to mirror it, you lose the bits you modified on the other side.
-The only way to accomplish mirroring and keeping things is to mirror the **cutter** instead of the object itself.
-It can be confusing because for basic shapes, you can accomplish exactly the same thing by mirroring the object or the cutters, but as your objects get more complex, this starts to matter.
-## Unmirrored
-[Open: Pasted image 20241114201258.png](attachments/fb227581cff14a4ac985519eb0ffa535_MD5.jpeg)
-![](/img/user/attachments/fb227581cff14a4ac985519eb0ffa535_MD5.jpeg)
-## Mirrored across *Y*
-Y axis is Green here, so you can see that we point an arrow FROM the target object ALONG the Green (Y) axis, toward the Mirror Object to obtain the mirrored object.
-[Open: Pasted image 20241114201110.png](attachments/76a01fef29f363420d7d9811fd88751b_MD5.jpeg)
-![](/img/user/attachments/76a01fef29f363420d7d9811fd88751b_MD5.jpeg)
-## Mirrored across *X*
-X axis is Red here, so you can see that we point an arrow FROM the target object ALONG the Red (X) axis, toward the Mirror Object to obtain the mirrored object.
-[Open: Pasted image 20241114201146.png](attachments/310fd3819a6743eed8e61bf091283f25_MD5.jpeg)
-![](/img/user/attachments/310fd3819a6743eed8e61bf091283f25_MD5.jpeg)
-If you pick *Z* (blue line) you'll see nothing, because both the object and the Mirror object are at the same point along the Z axis. Technically the box may be mirrored "over itself", but that is essentially a "null" operation.
-
-You **can** mirror an object "across itself".
-
-## Bisect and Flip
-If you think about it, it makes no sense that you can cut a bit out of a cube, mirror it across itself, and then see the cut. The mirror should just cause the entire cube to overlap itself.
-You really should mirror the **cutter** instead.
-
-But you can cheat, and the [Blender Mirror Modifier Docs](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html) exlain this perfectly:
-
-### Bisect
-If the mesh is already on both sides of the mirror plane, it is cut by that plane, and only one side (the “positive” one by default) is kept to perform the mirror process.
-
-### Flip
-When _Bisect_ is enabled on an axis, you can use this setting to switch the side kept and mirrored (i.e. when it is enabled, the “negative” side will be kept, instead of the “positive” one).
-
-So when Blender Bro says, "Sometimes you just have to check 'bisect' and I don't know why." what he means is, you should have mirrored the cutter, but you can use `Bisect` to tell Blender to cut the object in half before mirroring it and then `Flip` if it is cutting off the wrong half.
-
-This how you can cut one corner, and mirror an object across itself, across all axis, and cut out all four corners.
-[[attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg|Open: Pasted image 20250109171837.png]]
-![attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg](/img/user/attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg)
-## Symmetrize
-Symmetrize is the same as Mirror, but it is destructive.
-[[attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg|Open: Pasted image 20250706143514.png]]
-![attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg](/img/user/attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg)
-Once you activate it, then at the bottom you will have options for how to "Symmetrize", that being the axis and the direction.
-[[attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg|Open: Pasted image 20250706143653.png]]
-![attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg](/img/user/attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg)
-I'm not aware of any reason to use this instead of Mirror, but it is there and this is how it works.
-# Solidify *a plane*
-Solidify is used on a plane to allow you to extrude it.
-*Even Thickness* is affects how the plane is solidified and generally just keep it on always, but be aware of it if you feel the solidification doesn't look right when solidifying a complex shape.
-# Export to FBX for Unity
-## Consider Naming your Objects Meaningfully
-Within the Collections panel each object has a name.
-These names **will** show up in Unity, but:
-1. The "folders" will not: The structure will be flattened.
-2. No two objects can share a name: Numbers will be added to duplicate names when imported into Unity.
-So if you desire, name them to help in Unity. It isn't required though. It depends on how much you plan to work with the mesh and/or update it over time from Blender.
-## Apply Everything
-1. `a` - Select All
-2. `Ctrl + a` - Apply
-3. Pick *All Transforms*
-## Set Origin Meaningfully
-This is kind of up to you, but if the object "sits on the ground", place it so it sits at "0 Z", and the center is centered in X/Y as well.
-If it is a spaceship maybe you want the center in the geometric center.
-
-Basically make it easy to import into Unity without having to fuss around with the position more than necesary.
-
-## Export
-As FBX. Use the "Operator Presets" to save your settings to use again.
-[Open: Pasted image 20241031193858.png](attachments/ee0d7e2cb013919efcdd9581c4644a16_MD5.jpeg)
-![](/img/user/attachments/ee0d7e2cb013919efcdd9581c4644a16_MD5.jpeg)
-You can save the `.fbx` right into the Unity folder you want it in and you can re-export over it to update it and Unity will handle the update.
-
-# Application of Modifiers
-Be aware that until you **apply** a modifier, the geometry shown is only a *preview*. You can demonstrate this by switching from Object to Edit mode and you will not see the modified object **or** you can turn on "preview in edit" mode [Open: Pasted image 20241101192435.png](attachments/9e769f185c89fc27b0b1e31206dbaea4_MD5.jpeg)
-![](/img/user/attachments/9e769f185c89fc27b0b1e31206dbaea4_MD5.jpeg) to see what will happen when you apply it.
-
-Also note that you can only apply modifiers in Object mode.
-
-[Open: Pasted image 20241101192538.png](attachments/1bb9d319d1bab17544fe80d0308a73e3_MD5.jpeg)
-![](/img/user/attachments/1bb9d319d1bab17544fe80d0308a73e3_MD5.jpeg)
-
-# Destructive Workflows
-Be aware that things done in Edit mode are "destructive" because the change can't be "removed" or "changed", while things done in Object mode via Modifiers are considered "non-destructive" because you can undo/change them easily, at least before you apply them.
-
-# Boolean Notes
 ## View Cutter Object as Wire
 You can select any single Object and view **it alone** as wire to make it easier when cutting so you don't have to hide it and you can move it around and see the result:
 [Open: Pasted image 20241101194028.png](attachments/4c4cf899e0c2f73c04f4e8edd6230102_MD5.jpeg)
@@ -571,13 +506,142 @@ Basically it doesn't matter, but if you see the lines after using Shade Autosmoo
 but you may want to limit your bevel count for games where vertex count matters.
 ### Bevel Modifiers in Object Mode
 Use either 1 or 3, because the entire point is to add "highlights" to the edges so that they "pop" and look more realisitc. More than 3 doesn't really show up.
-# Empty
-You can add "Empty" objects for use with things like mirror across. Save as with Meshes, `Shift+a` and then pick Empty and whatever you want.
-Plan Axis is often used for these things.
-It can be a lot easier than making junk meshes for tasks like this.
+# Mirroring
+**First, remember that you have to pick a Mirror Object, otherwise it does nothing!**
+
+Note that you mirror "along" the axis chosen. In other words, point an arrow FROM the target object ALONG the axis chosen TOWARD the Mirror Object.
+
+Also note that a Mirror is essentially "overwriting" the other half, so if you modified both sides of an object and then try to mirror it, you lose the bits you modified on the other side.
+The only way to accomplish mirroring and keeping things is to mirror the **cutter** instead of the object itself.
+It can be confusing because for basic shapes, you can accomplish exactly the same thing by mirroring the object or the cutters, but as your objects get more complex, this starts to matter.
+## Unmirrored
+[Open: Pasted image 20241114201258.png](attachments/fb227581cff14a4ac985519eb0ffa535_MD5.jpeg)
+![](/img/user/attachments/fb227581cff14a4ac985519eb0ffa535_MD5.jpeg)
+## Mirrored across *Y*
+Y axis is Green here, so you can see that we point an arrow FROM the target object ALONG the Green (Y) axis, toward the Mirror Object to obtain the mirrored object.
+[Open: Pasted image 20241114201110.png](attachments/76a01fef29f363420d7d9811fd88751b_MD5.jpeg)
+![](/img/user/attachments/76a01fef29f363420d7d9811fd88751b_MD5.jpeg)
+## Mirrored across *X*
+X axis is Red here, so you can see that we point an arrow FROM the target object ALONG the Red (X) axis, toward the Mirror Object to obtain the mirrored object.
+[Open: Pasted image 20241114201146.png](attachments/310fd3819a6743eed8e61bf091283f25_MD5.jpeg)
+![](/img/user/attachments/310fd3819a6743eed8e61bf091283f25_MD5.jpeg)
+If you pick *Z* (blue line) you'll see nothing, because both the object and the Mirror object are at the same point along the Z axis. Technically the box may be mirrored "over itself", but that is essentially a "null" operation.
+
+You **can** mirror an object "across itself".
+
+## Bisect and Flip
+If you think about it, it makes no sense that you can cut a bit out of a cube, mirror it across itself, and then see the cut. The mirror should just cause the entire cube to overlap itself.
+You really should mirror the **cutter** instead.
+
+But you can cheat, and the [Blender Mirror Modifier Docs](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html) exlain this perfectly:
+
+### Bisect
+If the mesh is already on both sides of the mirror plane, it is cut by that plane, and only one side (the “positive” one by default) is kept to perform the mirror process.
+
+### Flip
+When _Bisect_ is enabled on an axis, you can use this setting to switch the side kept and mirrored (i.e. when it is enabled, the “negative” side will be kept, instead of the “positive” one).
+
+So when Blender Bro says, "Sometimes you just have to check 'bisect' and I don't know why." what he means is, you should have mirrored the cutter, but you can use `Bisect` to tell Blender to cut the object in half before mirroring it and then `Flip` if it is cutting off the wrong half.
+
+This how you can cut one corner, and mirror an object across itself, across all axis, and cut out all four corners.
+[[attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg|Open: Pasted image 20250109171837.png]]
+![attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg](/img/user/attachments/df086c77c0afd1b0152fe46b7b4b2f84_MD5.jpeg)
+## Symmetrize
+Symmetrize is the same as Mirror, but it is destructive.
+[[attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg|Open: Pasted image 20250706143514.png]]
+![attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg](/img/user/attachments/bd6d04247aab466b3cc27865b6c280a3_MD5.jpeg)
+Once you activate it, then at the bottom you will have options for how to "Symmetrize", that being the axis and the direction.
+[[attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg|Open: Pasted image 20250706143653.png]]
+![attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg](/img/user/attachments/f8de28a127abadfb48d7c50bca61b95e_MD5.jpeg)
+I'm not aware of any reason to use this instead of Mirror, but it is there and this is how it works.
+# Solidify *a plane*
+Solidify is used on a plane to allow you to extrude it.
+*Even Thickness* is affects how the plane is solidified and generally just keep it on always, but be aware of it if you feel the solidification doesn't look right when solidifying a complex shape.
+# Array Modifier
+There isn't much to say about this, other than knowing it exists is super important. There are a lot of nifty things that you can do or do more easily using the Array modifier.
+## Connected Arrays
+Remember that you don't actually have to drag your objects out so that they are not connected. You might want to use an Array kind of like a way to slice something into a bunch of pieces.
+## Merging Faces
+If you apply an array for an object where there is no space between the bits, you can select the "Merge" option to merge adjacent faces.
+*Be aware that such "internal" faces result in non-manifold geometry.* This may be a problem or it may not, but if you only want the "slices" you can also delete those excess internal faces if they are causing you problems later.
 # Screw
 This is like a "revolve" although it takes some fiddling to understand it and get what you want, it is quite powerful.
 https://blender.stackexchange.com/questions/46464/how-to-extrude-revolve-2d-shapes-axisymmetrically
+# Topology
+## Definitions
+ - Topology === Polygons (Triangles, Quads, and Ngons)
+ - Geometry === Vertices, Edges, and Faces
+     - The Geometry *make up* the Topology
+#### Shapes, based on edge count:
+ - Triangles - 3 sides. Cannot be "bent"!
+ - Quads - A square, 4 sides
+ - N-Gons or Ngons - Any face with more than 4 edges.
+## Shading Problems based on Topology
+ - Triangles are ALWAYS flat, regardless of how you move the vertexes. They cannot be bent geometrically, thus they are **always flat** and shaders will work perfectly on them due to this consistent flatness. **Again, it is impossible to bend a triangle in 3D software.**
+ - Quads CAN be bent by moving vertices around. **Bent quads shade badly!** However flat quads will shade exactly the same as triangles do.
+     - Ngons are basically the same. Easy to bend, causing shading issues, but again, left flat they will shade just as well as triangles.
+## Normals
+In "Edit Mode" (not Object mode) you can enable showing the Normal direction:
+[[attachments/e5c2d6a79761732793d151cf1ee981d4_MD5.jpeg|Open: Pasted image 20250706213601.png]]
+![attachments/e5c2d6a79761732793d151cf1ee981d4_MD5.jpeg](/img/user/attachments/e5c2d6a79761732793d151cf1ee981d4_MD5.jpeg)
+Alt+n - Normals menu, and you can flip one.
+### Face Orientation
+is an option to help show faces that are flipped
+[[attachments/b9655bbc4ca9124f2a4f2a0e38d91409_MD5.jpeg|Open: Pasted image 20250706213736.png]]
+![attachments/b9655bbc4ca9124f2a4f2a0e38d91409_MD5.jpeg](/img/user/attachments/b9655bbc4ca9124f2a4f2a0e38d91409_MD5.jpeg)
+You can get flipped normals during Boolean cuts, which can be fixed after apply or by flipping the normal on the cutter.
+You will find that you cannot bevel on flipped faces.
+### Other Common Topology issues
+#### Internal faces
+If you get a face inside of your object, that is technically non-manifold geometry. A common sign of this is an inability to dissolve an edge. There may be an internal face on that edge, preventing the dissolve.
+#### Disconnected Geometry
+You can check for this by grabbing a face and seeing if it shows an opening when you move it. The solution is much like that for excess vertices, you use merge by distance, because the disconnected geometry only exists by way of having extra vertexes.
+#### Overlapping Geometry
+You can select vertexes and press `m` and select `At last` to merge vertexes together to eliminate overlapping faces.
+
+# Export to FBX for Unity
+## Consider Naming your Objects Meaningfully
+Within the Collections panel each object has a name.
+These names **will** show up in Unity, but:
+1. The "folders" will not: The structure will be flattened.
+2. No two objects can share a name: Numbers will be added to duplicate names when imported into Unity.
+So if you desire, name them to help in Unity. It isn't required though. It depends on how much you plan to work with the mesh and/or update it over time from Blender.
+## Apply Everything
+1. `a` - Select All
+2. `Ctrl + a` - Apply
+3. Pick *All Transforms*
+## Set Origin Meaningfully
+This is kind of up to you, but if the object "sits on the ground", place it so it sits at "0 Z", and the center is centered in X/Y as well.
+If it is a spaceship maybe you want the center in the geometric center.
+
+Basically make it easy to import into Unity without having to fuss around with the position more than necesary.
+## Export
+As FBX. Use the "Operator Presets" to save your settings to use again.
+[Open: Pasted image 20241031193858.png](attachments/ee0d7e2cb013919efcdd9581c4644a16_MD5.jpeg)
+![](/img/user/attachments/ee0d7e2cb013919efcdd9581c4644a16_MD5.jpeg)
+You can save the `.fbx` right into the Unity folder you want it in and you can re-export over it to update it and Unity will handle the update.
+
+# Export GLTF for Godot
+GLTF is a the preferred format for export from Blender for Godot.
+## GLB vs GLTF
+"GLB is a binary version of the GLTF format, which is used for 3D models and scenes. While GLTF files are text-based and can be larger due to their JSON structure, GLB files are more compact and include all resources like textures in a single file, making them easier to manage in applications like Godot."
+ - TL;DR: I use `.glb` for the above reasons.
+## Cutters and other Hidden Items
+To prevent cutters from showing up as meshes in the export limit the export to visible items:
+[[attachments/920a6eb18703334a15c8d9140856b4fd_MD5.jpeg|Open: Pasted image 20250810192447.png]]
+![attachments/920a6eb18703334a15c8d9140856b4fd_MD5.jpeg](/img/user/attachments/920a6eb18703334a15c8d9140856b4fd_MD5.jpeg)
+## Scene hierarchy
+By default only Meshes are exported, not those fun "Catalogue" entries that group things, but you can fix that by enabling:
+*Data->Scene Graph -> Full Collection Hierarchy*
+Then you will see the same scene collections in Godot as you see in Blender, making it easier to find things and target them by name in groups in code.
+[[attachments/0b07b5a0b7a79b56267c887d582b205e_MD5.jpeg|Open: Pasted image 20250810123911.png]]  
+![0b07b5a0b7a79b56267c887d582b205e_MD5.jpeg](/img/user/attachments/0b07b5a0b7a79b56267c887d582b205e_MD5.jpeg)
+[[attachments/f3f6993a2f8564e5f9c7d240be070779_MD5.jpeg|Open: Pasted image 20250810131642.png]]
+![attachments/f3f6993a2f8564e5f9c7d240be070779_MD5.jpeg](/img/user/attachments/f3f6993a2f8564e5f9c7d240be070779_MD5.jpeg)
+## Renaming Things
+If you want to rename a list of things, there is a *Batch Rename* feature to help:
+[[attachments/053ada08b9a666b892681be6883f63a7_MD5.jpeg|Open: Pasted image 20250810131423.png]]
+![attachments/053ada08b9a666b892681be6883f63a7_MD5.jpeg](/img/user/attachments/053ada08b9a666b892681be6883f63a7_MD5.jpeg)
 # Tips
 ## Why can't I bevel in Edit Mode?
 Or why does the bevel seem to only affect one "face"?
@@ -589,6 +653,7 @@ In Edit mode `a` to select all, then use the `Mesh` tool menu and select `Cleanu
 Sometimes you cannot Zoom or Pan anymore due to being stuck at some invisible limit.
 `Alt+Middle Click` - Will reset your focus to the clicked point and typically fixes this.
 # Test Ring Notes
+This is just personal notes from a thing I was working on. It probably doesn't help anybody but me when trying to recreate this one random thing I have.
 [Open: Pasted image 20241102160124.png](attachments/d2b8023a09fd5bd1abc0fe0b55b49286_MD5.jpeg)
 ![](/img/user/attachments/d2b8023a09fd5bd1abc0fe0b55b49286_MD5.jpeg)
 25 Edges:
