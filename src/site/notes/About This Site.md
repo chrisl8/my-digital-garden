@@ -64,3 +64,9 @@ This site collects no information and hardly knows that you were even here, and 
 
 I'm also on Mastodon
 <a rel="me" href="https://mastodon.social/@EkpyroticFrood">@EkpyroticFrood@mastodon.social</a>
+
+# LICENSE
+
+I place my documentation and general writing under the [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+See the LICENSE file in this repository for the exact boilerplate license for this particular repository.
