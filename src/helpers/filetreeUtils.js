@@ -24,16 +24,6 @@ const sortTree = (unsorted) => {
         return -1;
       }
 
-      let a_order = parseInt(unsorted[a].order) || false;
-      let b_order = parseInt(unsorted[b].order) || false;
-      if (a_order || b_order) {
-        if (a_order > b_order) {
-          return 1;
-        } else {
-          return -1;
-        }
-      }
-
       //Regular expression that extracts any initial decimal number
       const aNum = parseFloat(a.match(/^\d+(\.\d+)?/));
       const bNum = parseFloat(b.match(/^\d+(\.\d+)?/));
@@ -74,7 +64,6 @@ function getPermalinkMeta(note, key) {
   let hide = false;
   let pinned = false;
   let folders = null;
-  let order = null;
   try {
     if (note.data.permalink) {
       permalink = note.data.permalink;
@@ -96,9 +85,6 @@ function getPermalinkMeta(note, key) {
     if (note.data.pinned) {
       pinned = note.data.pinned;
     }
-    if (note.data.order) {
-      order = note.data.order;
-    }
     if (note.data["dg-path"]) {
       folders = note.data["dg-path"].split("/");
     } else {
@@ -111,7 +97,7 @@ function getPermalinkMeta(note, key) {
     //ignore
   }
 
-  return [{ permalink, name, noteIcon, hide, pinned, order }, folders];
+  return [{ permalink, name, noteIcon, hide, pinned }, folders];
 }
 
 function assignNested(obj, keyPath, value) {
