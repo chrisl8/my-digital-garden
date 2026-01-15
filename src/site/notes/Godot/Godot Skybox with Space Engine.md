@@ -26,26 +26,26 @@ https://docs.godotengine.org/en/stable/classes/class_panoramaskymaterial.html#cl
 Upload each segment form the folder. The names of the files should make it clear which one goes where.
 Set the rotation to 0 for ALL segments.
 use the "Update" button to update the image.
-![](/img/user/attachments/Pasted image 20231227142414.png)
+![](/img/user/attachments/Pasted%20image%2020231227142414.png)
 When you are done use "Download(save) result" to get the file for Godot.
 
 **Copy this saved file into your Godot project somewhere.**
 # Set up a Skybox in Godot
  - Add a "WorldEnvironment" to your scene
  - Add a "New Environment" to it
-   ![](/img/user/attachments/Pasted image 20231227142617.png)
+   ![](/img/user/attachments/Pasted%20image%2020231227142617.png)
  - Click on the Environment and under Background -> Mode select "Sky"
-   ![](/img/user/attachments/Pasted image 20231227142733.png)
+   ![](/img/user/attachments/Pasted%20image%2020231227142733.png)
    - Open up the "Sky" drop down now and click on `<empty>` and add a new Sky
-![](/img/user/attachments/Pasted image 20231227142839.png)
+![](/img/user/attachments/Pasted%20image%2020231227142839.png)
 
  - Click on "Sky" to make it open up and click on `<empty>` underneath next to "Sky Material" and select "New PanoramaSkyMaterial"
-![](/img/user/attachments/Pasted image 20231227143141.png)
+![](/img/user/attachments/Pasted%20image%2020231227143141.png)
 
  - Click on "PanoramaSkyMaterial" to make it open up so that you see `<empty>` next to "Panorama"
  - Drag the file panorama image file you saved from the web site earlier onto this box.
-   ![](/img/user/attachments/Pasted image 20231227143546.png)
+   ![](/img/user/attachments/Pasted%20image%2020231227143546.png)
 
 Now it should look something like this and you will see the exported background from Space Engine in your editor.
-![](/img/user/attachments/Pasted image 20231227143655.png)
+![](/img/user/attachments/Pasted%20image%2020231227143655.png)
 

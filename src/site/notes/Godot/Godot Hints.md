@@ -25,13 +25,13 @@ or
 The Color picker feels broken to some of us. Like if you slide the sliders all over to white, the wheel is now just . . . white.
 
 How do I pick a color?!
-![](/img/user/attachments/Pasted image 20231004173651.png)
+![](/img/user/attachments/Pasted%20image%2020231004173651.png)
 
 Click the little OI thingy on the right and change it to "VHS Circle" and then it looks like you probably expected it to
-![](/img/user/attachments/Pasted image 20231004173807.png)
+![](/img/user/attachments/Pasted%20image%2020231004173807.png)
 
 However this will revert back every time, so go into Editor Settings and set the default under Interface->Inspector->Default Color Picker Shape
-![](/img/user/attachments/Pasted image 20231004174109.png)
+![](/img/user/attachments/Pasted%20image%2020231004174109.png)
 # Await
 First **please** READ THIS fully:
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html#awaiting-for-signals-or-coroutines

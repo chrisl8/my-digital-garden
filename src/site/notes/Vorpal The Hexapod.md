@@ -134,6 +134,8 @@ Some bits were already covered above, so this only includes additional items.
 I followed the YouTube videos provided on the [Vorpal The Hexapod Assembly Instructions](https://www.vorpalrobotics.com/wiki/index.php/Vorpal_The_Hexapod_Assembly_Instructions#VIDEO_BUILD_INSTRUCTIONS) page.
 ## 3D Printed Parts
 The Controller ("Gamepad") Button Carrier and Cover would not fit the button matrix that I purchased from Amazon, so I modified them to fit.
+ - [Expanded Gamepad Button Carrier](https://ekpyroticfrood.net/public-files/vorpal-hexabot/Gamepad_V1r9a_Button_Carrier_Expanded_for_Tegg_Matrix.stl)
+ - [Expanded Gamepad Cover](https://ekpyroticfrood.net/public-files/vorpal-hexabot/Gamepad_V1r9a_Cover_Expanded_for_Tegg_Matrix.stl)
 ## Building Notes
  - Note that the video includes the old style power switch that had its own extra 3D printed part. The current design does away with that.
 ## Wiring
